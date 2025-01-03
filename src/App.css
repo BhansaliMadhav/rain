@@ -1,0 +1,16 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #1a1a2e, #16213e);
+  color: white;
+  font-family: "Arial", sans-serif;
+}
+
+.title {
+  font-size: 2rem;
+  margin: 20px;
+}
+
