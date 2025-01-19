@@ -1,16 +1,15 @@
 .grid {
-    display: grid;
-    gap: 0px;
-    border: 2px solid #ffffff;
-    background-color: #000000;
-    padding: 10px;
-    border-radius: 10px;
-  }
-  
-  .cell {
-    border: 1px solid #535353;
-    width: 20px;
-    height: 20px;
-    transition: background-color 0.2s ease-in-out;
-  }
-  
+  display: grid;
+  gap: 0px;
+  border: 2px solid #ffffff;
+  background-color: #000000;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.cell {
+  border: 1px solid #535353;
+  width: 20px;
+  height: 20px;
+  transition: background-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
