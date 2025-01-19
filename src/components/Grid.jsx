@@ -26,7 +26,7 @@ const Grid = ({ rows, cols }) => {
 
   // Generate raindrops (every 300ms)
   useEffect(() => {
-    const generateRaindropsInterval = 300; // 300ms for generating raindrops
+    const generateRaindropsInterval = 600; // 300ms for generating raindrops
     const interval = setInterval(() => {
       setGrid((prevGrid) => {
         const newGrid = prevGrid.map((row) => row.slice());
@@ -97,7 +97,7 @@ const Grid = ({ rows, cols }) => {
 
   // Reset occupied columns periodically (every 5 seconds)
   useEffect(() => {
-    const resetOccupiedColumnsInterval = 2500; // Reset every 5 seconds to avoid full occupation
+    const resetOccupiedColumnsInterval = 3600; // Reset every 5 seconds to avoid full occupation
     const interval = setInterval(() => {
       setOccupiedColumns(new Set()); // Reset occupied columns
     }, resetOccupiedColumnsInterval);
@@ -107,7 +107,7 @@ const Grid = ({ rows, cols }) => {
 
   // Animate raindrops (every 100ms)
   useEffect(() => {
-    const moveRaindropsInterval = 100; // 100ms for animating movement
+    const moveRaindropsInterval = 200; // 100ms for animating movement
     const interval = setInterval(() => {
       setGrid((prevGrid) => {
         const newGrid = prevGrid.map((row) => row.slice());
